@@ -40,11 +40,29 @@
     </form>
   </main>
 
-  <main id="home" class="card hidden">
-    <h1>Berhasil masuk</h1>
-    <p id="cryptoStatus" class="note">Fondasi enkripsi siap. Belum dipakai untuk chat.</p>
+  <main id="chat" class="chat hidden">
+    <header class="bar">
+      <div><strong>Couple Chat</strong><span id="conn" class="conn">…</span></div>
+      <button id="settingsBtn" type="button" class="icon" aria-label="Pengaturan">⚙</button>
+    </header>
+    <p class="note enc">🔒 Enkripsi aktif (tahap uji). Isi pesan tidak terbaca di server.</p>
+    <div id="msgs" class="msgs" aria-live="polite">
+      <button id="olderBtn" type="button" class="secondary small hidden">Muat pesan lebih lama</button>
+      <ol id="msgList"></ol>
+      <p id="emptyMsg" class="note center hidden">Belum ada pesan.</p>
+    </div>
+    <form id="sendForm" class="sendbar">
+      <textarea id="msgInput" rows="2" maxlength="1000" placeholder="Tulis pesan…"></textarea>
+      <button id="sendBtn" type="submit">Kirim</button>
+    </form>
+  </main>
+
+  <main id="settings" class="card hidden">
+    <h1>Pengaturan</h1>
+    <p class="note">Percakapan memakai passphrase bersama. Keluar menghapus kunci dari HP ini, riwayat di cloud tetap ada.</p>
     <button id="testBtn" type="button" class="secondary">Uji enkripsi</button>
     <pre id="testOut"></pre>
+    <button id="backBtn" type="button" class="secondary">Kembali ke chat</button>
     <button id="logoutBtn" type="button">Keluar</button>
   </main>
 
