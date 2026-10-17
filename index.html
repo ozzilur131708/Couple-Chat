@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <title>Couple Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p id="loading" class="center">Memuat…</p>
+
+  <main id="login" class="card hidden">
+    <h1>Couple Chat</h1>
+    <form id="loginForm">
+      <input id="email" type="email" autocomplete="username" placeholder="Email" required>
+      <input id="password" type="password" autocomplete="current-password" placeholder="Password" required>
+      <button id="loginBtn" type="submit">Masuk</button>
+      <p id="loginMsg" role="alert"></p>
+    </form>
+  </main>
+
+  <main id="home" class="card hidden">
+    <h1>Berhasil masuk</h1>
+    <p id="status">Memeriksa akses…</p>
+    <button id="logoutBtn" type="button">Keluar</button>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
