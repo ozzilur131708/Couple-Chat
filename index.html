@@ -20,9 +20,31 @@
     </form>
   </main>
 
+  <main id="setup" class="card hidden">
+    <h1>Buat passphrase</h1>
+    <p class="note">Satu passphrase untuk Anda berdua: minimal 5 kata acak. Sepakati langsung, jangan lewat chat. Jika hilang, pesan tidak bisa dipulihkan.</p>
+    <form id="setupForm">
+      <input id="pass1" type="password" autocomplete="new-password" placeholder="Passphrase" required>
+      <input id="pass2" type="password" autocomplete="new-password" placeholder="Ulangi passphrase" required>
+      <button id="setupBtn" type="submit">Simpan</button>
+      <p id="setupMsg" role="alert"></p>
+    </form>
+  </main>
+
+  <main id="unlock" class="card hidden">
+    <h1>Masukkan passphrase</h1>
+    <form id="unlockForm">
+      <input id="unlockPass" type="password" autocomplete="off" placeholder="Passphrase" required>
+      <button id="unlockBtn" type="submit">Buka</button>
+      <p id="unlockMsg" role="alert"></p>
+    </form>
+  </main>
+
   <main id="home" class="card hidden">
     <h1>Berhasil masuk</h1>
-    <p id="status">Memeriksa akses…</p>
+    <p id="cryptoStatus" class="note">Fondasi enkripsi siap. Belum dipakai untuk chat.</p>
+    <button id="testBtn" type="button" class="secondary">Uji enkripsi</button>
+    <pre id="testOut"></pre>
     <button id="logoutBtn" type="button">Keluar</button>
   </main>
 
