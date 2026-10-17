@@ -16,6 +16,8 @@ input, button {
 }
 input { background: #1f2937; color: #f3f4f6; }
 button { background: #e11d48; color: #fff; border: 0; font-weight: 600; }
+button.secondary { background: #374151; }
 button:disabled { opacity: .6; }
-#loginMsg, #status { min-height: 1.4em; color: #fca5a5; }
-#status { color: #d1d5db; }
+.note { color: #9ca3af; font-size: .9rem; line-height: 1.4; }
+#loginMsg, #setupMsg, #unlockMsg { min-height: 1.4em; color: #fca5a5; }
+#testOut { white-space: pre-wrap; word-break: break-all; font-size: .85rem; color: #d1d5db; }
